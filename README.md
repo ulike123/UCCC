@@ -1,10 +1,15 @@
-# RTL
+# UCCC
 
-- 👋 Hi, I’m @ulike123
-- 👀 I’m interested in RTL languages...
-- 🌱 I’m currently learning how to support RTL languages...
-- 💞️ I’m looking to collaborate on RTL languages support...
-- 📫 https://github.com/ulike123/ ...
+Howdy?!
+
+Easy to use. Just copy and past the HTML code among HTML comments quotes into the area mostly after page footer.
+
+It will show a PP alert!
+
+Somewhat like the following warning style:
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
 
 <!---
 ulike123/ulike123 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
