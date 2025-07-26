@@ -4,7 +4,7 @@ Howdy?!
 
 Easy to use. Just copy and past the HTML code among HTML comments quotes into the area mostly after page footer.
 
-It will show a PP alert!
+It will show a PP(Privacy Policy) alert! using UCCC(Universal Cookies Common Confirmation)
 
 Somewhat like the following warning style:
 
