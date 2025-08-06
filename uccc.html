@@ -9,89 +9,110 @@
 
 <!-- UCCC(Universal Cookies Common Confirmation) -->
 <style type="text/css">
+
 .uccc {
   top: 8%;
   left: 8%;
   width: auto;
   height: auto;
-  margin: 20px;
+  margin: 4px;
   padding: auto;
   overflow: auto;
-  position: static;
   position: absolute;
   display: none;
   z-index: 31999;
-  background: #ffffcc;
-  background: linear-gradient(to right, #ffff99, #ffffcc);
-  border: 4px groove #ffffcc;
-  border-radius: 14px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 12pt;
-  color: #000;
+  text-decoration: none;
+  border-radius: 14pt;
+  border: 1pt solid orange;
+  & * {
+    text-align: left;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    color: #5c5c5c;
+  }
 }
-.uccc p {
+.uccc div {
+  background: #ffffcc;
+  background: linear-gradient(to right, #ffffff, #ffffcc);  
+}
+
+.uccc p, .uccc-content p {
   margin: auto;
   padding: auto;
-  text-align: left;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 12pt;
-  color: #000;
 }
 
 .uccc-content {
   margin: auto;
-  padding: 20px;
-  border: 2px outset #ffff99;
-  border-radius: 14px;
-  overflow-wrap: break-word;
-}
-.uccc-content p {
-  margin: auto;
-  padding: auto;
-  text-align: left;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 12pt;
-  color: #000;
+  padding: 14pt;
+  border: 2pt solid yellow;
+  border-radius: 12pt;
 }
 
 .ulist li {
   margin: 0;
   padding: 0;
-  list-style: circle;
   list-style: square;
-  list-style-type: circle;
   list-style-type: square;
   list-style-position: inside;
 }
+.ulist li:before, .ulist li:after { content: ''; }
 
 .ulnk {
-  margin: auto;
-  padding: auto;
+  margin: 0;
+  padding: 0;
+  margin-right: 4px;
+  padding-right: 4px;
   float: right;
   text-align: right;
-  text-decoration: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 12pt;
   font-weight: bold;
   color: #aaa;
 }
 .ulnk:hover,
-.ulnk:focus {
+.ulnk:focus,
+.ulnk:active {
   color: #888;
   cursor: pointer;
-  text-decoration: none;
+}
+.ulnk:visited { color: #aaa; }
+
+.no-js {
+  font-size:   14pt;
+  font-family: "Courier New", Courier, monospace;
+  color:       #000;
+  background:  #fff;
+  white-space: pre-wrap;
 }
 </style>
+
+<!--[if IE 6 | IE 7 | IE 8 | IE 9]>
+&nbsp;<br>&nbsp;
+Old Browser Found!
+&nbsp;<br>&nbsp;
+Kindly, upgrade your browser!
+&nbsp;<br>&nbsp;
+<![else]-->
+<script type="text/javascript">document.getElementById("nojsdiv").style.display="block";</script>
+<![endif]-->
+
+<noscript class="no-js">
+        
+        Kindly, enable JavaScript!
+        This site will not function!
+        This site uses cookies!
+        There is cookies JavaScript alert that should be displayed!
+        
+</noscript>
+
 <div id="UCCC" class="uccc">
   <div class="uccc-content">
     <p><b>Privacy &amp; Cookies Alert!</b></p>
     <p>This site uses cookies. 
        By continuing to use this website, you agree to their use. 
        To find out more, including how to control cookies, see here: 
-    <a rel="noopener noreferrer nofollow" title="PP" href="//www.blogger.com/go/privacy">Privacy Policy</a></p>
+    <a rel="noopener noreferrer nofollow" title="PP" href="//ulike123.com/en/support/privacy.php">Privacy Policy</a></p>
   	<p>&nbsp;</p><span id="ulnkS" class="ulnk">Stop alerting me</span><p>&nbsp;</p>
     <p>&nbsp;</p><span id="ulnkK" class="ulnk">Keep alerting me</span><p>&nbsp;</p>
-    <p>&nbsp;</p><span id="ulnkI" class="ulnk">Keep alerting me and verbosing alert</span><p>&nbsp;</p>
+    <p>&nbsp;</p><span id="ulnkI" class="ulnk">Keep alerting me in detail</span><p>&nbsp;</p>
     <br />
     <p><b>Cookies settings change when you</b>:</p>
     <ul class="ulist">
@@ -105,19 +126,19 @@
     <p><b>Browsers settings change tips</b>:</p>
     <ul class="ulist">
     	<li>
-    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Internet Explorer" href="//support.microsoft.com/en-us/help/278835/how-to-delete-cookie-files-in-internet-explorer">
+    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Internet Explorer" href="//support.microsoft.com/en-us/help/278835/how-to-delete-cookie-files-in-internet-explorer" target="_blank">
     	Cookie settings in Internet Explorer</a></li>
     	<li>
-    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Edge" href="//privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy">
+    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Edge" href="//privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy" target="_blank">
     	Cookie settings in Edge</a></li>
     	<li>
-    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Firefox" href="//support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&amp;redirectslug=Cookies">
+    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Firefox" href="//support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&amp;redirectslug=Cookies" target="_blank">
     	Cookie settings in Firefox</a></li>
     	<li>
-    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Chrome" href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647">
+    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Chrome" href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647" target="_blank">
     	Cookie settings in Chrome</a></li>
     	<li>
-    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Safari" href="//support.apple.com/kb/HT1677">
+    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Safari" href="//support.apple.com/kb/HT1677" target="_blank">
     	Cookie settings in Safari</a></li>
     </ul>
     <br />
@@ -198,7 +219,7 @@ function ShowCookies()
         if(getUCCC("UCCC")=="2")
         {
             if(res==""){ res = "\r\nNo cookie(s) found!\r\n"; }
-            res = "UCCC cookie option saved successfully!\r\n\r\nResult:\r\n" + res + "\r\nNote: \r\n - Refer to this website's Privacy Policy to read more... \r\n - Clear this web cookies history using browser's \r\n    settings manually if necessary. \r\n - Dismiss this alert by pressing(ex: Yes, OK, etc.) or... \r\n - Press(ex: No, Cancel, etc.) for continuing alerting!";
+            res = "UCCC cookie option saved successfully!\r\n\r\nResult:\r\n" + res + "\r\nNote: \r\n - Refer to this website's Privacy Policy to read more... \r\n - Clear this web cookies history using browser's \r\n    settings manually if necessary. \r\n - Some cookie type isn't showable due to(e.g., technical, security, etc.) reason including 3rd parties' that may be identified as XSS. \r\n - Dismiss this alert by pressing(ex: Yes, OK, etc.) or... \r\n - Press(ex: No, Cancel, etc.) for continuing alerting!";
             if(confirm(res))
             { setUCCC("UCCC", "3"); }
         }
@@ -246,6 +267,6 @@ if(ucccCookie=="2"){ ShowCookies(); }
 </script>
 <!-- UCCC(Universal Cookies Common Confirmation) -->
 
-
 </body>
 </html>
+
