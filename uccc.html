@@ -1,275 +1,143 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Cookie Options</title>
+    <style>
+        /* Hover effect for the Save button */
+        .btn-save:hover {
+            background-color: #005a9e !important;
+        }
+        /* Hover effect for the Cancel button */
+        .btn-cancel:hover {
+            background-color: #e5e5e5 !important;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>UCCC</h1>
+<div id="ads-container" style="display: none; width: 100%; max-width: 100%; text-align: center; margin: 20px 0; min-height: 0px; overflow: hidden;"></div>
 
-<!-- UCCC(Universal Cookies Common Confirmation) -->
-<style type="text/css">
-
-.uccc {
-  top: 8%;
-  left: 8%;
-  width: auto;
-  height: auto;
-  margin: 4px;
-  padding: auto;
-  overflow: auto;
-  position: absolute;
-  display: none;
-  z-index: 31999;
-  text-decoration: none;
-  border-radius: 14pt;
-  border: 1pt solid orange;
-  & * {
-    text-align: left;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12pt;
-    color: #5c5c5c;
-    background: none !important;
-  }
-}
-.uccc div {
-  background: #ffffcc !important;
-  background: linear-gradient(to right, #ffffff, #ffffcc) !important;
-}
-
-.uccc p, .uccc-content p {
-  margin: auto;
-  padding: auto;
-}
-
-.uccc-content {
-  margin: auto;
-  padding: 14pt;
-  border: 2pt solid yellow;
-  border-radius: 12pt;
-}
-
-.ulist li {
-  margin: 0;
-  padding: 0;
-  list-style: square;
-  list-style-type: square;
-  list-style-position: inside;
-}
-.ulist li:before, .ulist li:after { content: ''; }
-
-.ulnk {
-  margin: 0;
-  padding: 0;
-  margin-right: 4px;
-  padding-right: 4px;
-  float: right;
-  text-align: right;
-  font-weight: bold;
-  color: #aaa;
-}
-.ulnk:hover,
-.ulnk:focus,
-.ulnk:active {
-  color: #888;
-  cursor: pointer;
-}
-.ulnk:visited { color: #aaa; }
-
-.no-js {
-  font-size:   14pt;
-  font-family: "Courier New", Courier, monospace;
-  color:       #000;
-  background:  #fff;
-  white-space: pre-wrap;
-}
-</style>
-
-<!--[if IE 6 | IE 7 | IE 8 | IE 9]>
-&nbsp;<br>&nbsp;
-Old Browser Found!
-&nbsp;<br>&nbsp;
-Kindly, upgrade your browser!
-&nbsp;<br>&nbsp;
-<![else]-->
-<script type="text/javascript">document.getElementById("nojsdiv").style.display="block";</script>
-<![endif]-->
-
-<noscript class="no-js">
+<div id="consentModal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6); font-family: 'Segoe UI', Tahoma, sans-serif;">
+    <div style="background-color:#ffffff; margin:12% auto; padding:25px; border-radius:10px; width:320px; text-align:left; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
         
-        Kindly, enable JavaScript!
-        This site will not function!
-        This site uses cookies!
-        There is cookies JavaScript alert that should be displayed!
+        <div style="text-align: center; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 10px;">
+            <h3 style="margin: 0; color:#222; font-size: 20px;">Cookie Options</h3>
+            <div style="font-size: 12px; color: #666; margin-top: 5px;">@ Your Exclusive Option</div>
+        </div>
         
-</noscript>
+        <div style="margin: 20px 0;">
+            <p>
+            <label style="display: flex; align-items: center; margin-bottom: 15px; color: #888; cursor: default;">
+                <input type="checkbox" checked disabled style="margin-right: 12px; width: 18px; height: 18px;"/>
+                <span style="font-size: 14px;">Functional (Always Required)</span>
+            </label>
+            </p>
+            
+            <p>
+            <label style="display: flex; align-items: center; margin-bottom: 15px; color: #888; cursor: default;">
+                <input type="checkbox" checked disabled style="margin-right: 12px; width: 18px; height: 18px;"/>
+                <span style="font-size: 14px;">Third Party Cookie (Always Required)</span>
+            </label>
+            </p>
 
-<div id="UCCC" class="uccc">
-  <div class="uccc-content">
-    <p><b>Privacy &amp; Cookies Alert!</b></p>
-    <p>This site uses cookies. 
-       By continuing to use this website, you agree to their use. 
-       To find out more, including how to control cookies, see here: 
-    <a rel="noopener noreferrer nofollow" title="PP" href="//ulike123.com/en/support/privacy.php">Privacy Policy</a></p>
-  	<p>&nbsp;</p><span id="ulnkS" class="ulnk">Stop alerting me</span><p>&nbsp;</p>
-    <p>&nbsp;</p><span id="ulnkK" class="ulnk">Keep alerting me</span><p>&nbsp;</p>
-    <p>&nbsp;</p><span id="ulnkI" class="ulnk">Keep alerting me in detail</span><p>&nbsp;</p>
-    <br />
-    <p><b>Cookies settings change when you</b>:</p>
-    <ul class="ulist">
-    	<li>Delete your cookies</li>
-    	<li>Block cookies, including third party cookies</li>
-    	<li>Switch internet browsers</li>
-    	<li>Change computers</li>
-    	<li>Upgrade your web browser</li>
-    </ul>
-    <br />
-    <p><b>Browsers settings change tips</b>:</p>
-    <ul class="ulist">
-    	<li>
-    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Internet Explorer" href="//support.microsoft.com/en-us/help/278835/how-to-delete-cookie-files-in-internet-explorer" target="_blank">
-    	Cookie settings in Internet Explorer</a></li>
-    	<li>
-    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Edge" href="//privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy" target="_blank">
-    	Cookie settings in Edge</a></li>
-    	<li>
-    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Firefox" href="//support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&amp;redirectslug=Cookies" target="_blank">
-    	Cookie settings in Firefox</a></li>
-    	<li>
-    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Chrome" href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647" target="_blank">
-    	Cookie settings in Chrome</a></li>
-    	<li>
-    	<a rel="noopener noreferrer nofollow" title="Cookie settings in Safari" href="//support.apple.com/kb/HT1677" target="_blank">
-    	Cookie settings in Safari</a></li>
-    </ul>
-    <br />
-    <p><b>Note</b>:</p>
-    <ul class="ulist">
-      <li>You may clear and\or stop cookies under this web name manually.</li>
-      <li>Kindly, revise your browser's cookies settings and\or history and...</li>
-      <li>Close all this web related tab(s) and\or window(s) if necessary.</li>
-    </ul>
-    <br />
-    <hr style="margin: 0; padding: 0;" />
-    <p><b>DISCLAIMER</b>: THIS IS JUST A STANDALONE ALERT. IT WON'T CHANGE ANY COOKIE SETTINGS EXCEPT ITS OWN, IF ALLOWED BY BROWSER'S USER.</p>
-  </div>
+            <p>
+            <label style="display: flex; align-items: center; color: #333; cursor: pointer;">
+                <input type="checkbox" id="adToggle" style="margin-right: 12px; width: 18px; height: 18px;"/>
+                <span style="font-size: 14px; font-weight: 500;">Show Ads</span>
+            </label>
+            </p>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <button onclick="saveConsent()" class="btn-save" style="flex: 2; background:#0078d4; color:white; border:none; padding:12px; border-radius:5px; font-weight: bold; cursor:pointer; font-size: 14px; transition: 0.2s;">Save Preferences</button>
+            <button onclick="closeModal()" class="btn-cancel" style="flex: 1; background:#f0f0f0; color:#555; border:none; padding:12px; border-radius:5px; font-weight: bold; cursor:pointer; font-size: 14px; transition: 0.2s;">Cancel</button>
+        </div>
+
+        <div><br/></div>
+
+        <div class="ulike123-post-metadata">
+          <p>
+            <span class="disclaimer-text" data-source-disclaimer-type="financial-risk-warning" data-source-disclaimer-full="Kindly refer to ulike123 TOS.">
+              <b>Source Disclaimer</b>: refer to <a href="https://www.ulike123.com/p/terms-of-service.html" title="ulike123 TOS">TOS</a>.
+            </span>
+          </p>
+          <p>
+            <span class="disclaimer-text" data-source-disclaimer-type="privacy-notice" data-source-disclaimer-full="Kindly refer to ulike123 PP.">
+              <b>Privacy Notice</b>: refer to <a href="https://www.ulike123.com/p/privacy-policy.html" title="ulike123 PP">PP</a>.
+            </span>
+          </p>
+        </div>
+
+    </div>
 </div>
-<script type="text/javascript">
-/* Functions */
-function setUCCC(name, value)
-{
-  const date = new Date();
-  date.setFullYear(date.getFullYear() + 1);
-  const expires = "expires=" + date.toUTCString();
-  document.cookie = name + "=" + value + "; " + expires + "; SameSite=Strict; Secure; path=/;";
-}
-function getUCCC(name)
-{
-  let res = "";
-  const duc = decodeURIComponent(document.cookie);
-  const arr = duc.split(';');
-  for (let i = 0; i < arr.length; i++)
-  {
-    const cok = arr[i].trim();
-    const [key, value] = cok.split("=");
-    if(key==name){ res = value; break; }
-  }
-  return(res);
-}
-function delUCCC(name)
-{
-    let this_web = location.hostname;
-    this_web = this_web.trim();
-    const date = new Date();
-    date.setFullYear(date.getFullYear() - 1);
-    const expires = "expires=" + date.toUTCString();
-    document.cookie = name + "=; " + expires + "; path=/;";
-    document.cookie = name + "=; domain="  +this_web+ "; " + expires + "; path=/;";
-    document.cookie = name + "=; domain=." +this_web+ "; " + expires + "; path=/;";
-}
-function IsCookiesEnabled()
-{
-    setUCCC("UCCC_TEST_IS_COOKIES_ENABLED", "1");
-    if(getUCCC("UCCC_TEST_IS_COOKIES_ENABLED")=="1")
-    {
-        delUCCC("UCCC_TEST_IS_COOKIES_ENABLED");
-        return(true);
-    }
-    return(false);
-}
-function TryKeepingCookiesDisclosedForVisitor()
-{
-  let res = "\r\n";
-  const duc = decodeURIComponent(document.cookie);
-  const arr = duc.split(';');
-  for (let i = 0; i < arr.length; i++)
-  {
-    const cok = arr[i].trim();
-    const [name, value] = cok.split("=");
-    if(name)
-        res += i+1 + ". Found cookie: " + name + "\r\n";
-  }
-  return(arr.length ? res : "");
-}
-function ShowCookies()
-{
-    let res = TryKeepingCookiesDisclosedForVisitor();
-    setTimeout(() =>
-    {
-        setUCCC("UCCC", "2");
-        if(getUCCC("UCCC")=="2")
-        {
-            if(res==""){ res = "\r\nNo cookie(s) found!\r\n"; }
-            res = "UCCC cookie option saved successfully!\r\n\r\nResult:\r\n" + res + "\r\nNote: \r\n - Refer to this website's Privacy Policy to read more... \r\n - Clear this web cookies history using browser's \r\n    settings manually if necessary. \r\n - Some cookie type isn't showable due to(e.g., technical, security, etc.) reason including 3rd parties' that may be identified as XSS. \r\n - Dismiss this alert by pressing(ex: Yes, OK, etc.) or... \r\n - Press(ex: No, Cancel, etc.) for continuing alerting!";
-            if(confirm(res))
-            { setUCCC("UCCC", "3"); }
-        }
-        else{ alert("Warning: couldn't save this web alert's cookie value as \"UCCC\" cookie name!"); }
-    }, 3000);
-}
-function CookiesBye()
-{
-    alert("Due to cookies being not enabled by your browser's settings: \r\n - Couldn't read this web alert's cookie value named \"UCCC\". \r\n - You may find it in browser's history by this web name \r\n    and delete it manually if necessary.");
-}
-/* Clicks */
-var    uccc = document.getElementById("UCCC");
-const spanS = document.getElementById("ulnkS");
-const spanK = document.getElementById("ulnkK");
-const spanI = document.getElementById("ulnkI");
-spanS.onclick = function()
-{
-  if(IsCookiesEnabled())
-  { setUCCC("UCCC", "1"); }
-  else{ CookiesBye(); }
-  uccc.style.display = "none";
-}
-spanK.onclick = function()
-{
-  if(IsCookiesEnabled())
-  { delUCCC("UCCC"); }
-  else{ CookiesBye(); }
-  uccc.style.display = "none";
-}
-spanI.onclick = function()
-{
-  if(IsCookiesEnabled())
-  { ShowCookies(); }
-  else{ CookiesBye(); }
-  uccc.style.display = "none";
-}
-/* UCCC Cookie
-   ucccCookie==""  New/No  and general     prompt is active
-   ucccCookie=="1" Yes     and general     prompt is dismissed
-   ucccCookie=="2" Yes     and ShowCookies prompt is active
-   ucccCookie=="3" Yes     and ShowCookies prompt is dismissed */
-const ucccCookie = getUCCC("UCCC");
-if(ucccCookie=="") { uccc.style.display = "block"; }
-if(ucccCookie=="2"){ ShowCookies(); }
-</script>
-<!-- UCCC(Universal Cookies Common Confirmation) -->
 
+<script>
+/**
+ * Cookie Functions
+ */
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
+}
+
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+/**
+ * Modal Logic
+ */
+function closeModal() {
+    document.getElementById("consentModal").style.display = "none";
+}
+
+function saveConsent() {
+    var isChecked = document.getElementById("adToggle").checked;
+    var consentStatus = isChecked ? "yes" : "no";
+    setCookie("consent", consentStatus, 365);
+    closeModal();
+    window.location.reload();
+}
+
+/**
+ * Execution
+ */
+window.addEventListener('DOMContentLoaded', function() {
+    var userChoice = getCookie("consent");
+
+    if (!userChoice) {
+        document.getElementById("consentModal").style.display = "block";
+    } else if (userChoice === "yes") {
+        var adBox = document.getElementById("ads-container");
+        adBox.style.display = "block";
+
+        var googleScript = document.createElement('script');
+        googleScript.async = true;
+        googleScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID";
+        googleScript.crossOrigin = "anonymous";
+        document.head.appendChild(googleScript);
+
+        adBox.innerHTML = '<div><br/></div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-YOUR_PUBLISHER_ID" data-ad-slot="YOUR_AD_UNIT_ID" data-ad-format="auto" data-full-width-responsive="true"></ins>';
+
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    }
+});
+</script>
 
 </body>
 </html>
-
-
